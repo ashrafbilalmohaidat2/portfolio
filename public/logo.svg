@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" width="140" height="140">
+  <polygon points="70,0 28,70 0,70 42,0" fill="none"/>
+  <polygon points="70,0 28,-70 -28,-70 -70,0 -28,70 28,70"
+    transform="translate(70,70)"
+    fill="#00e5c8" fill-opacity="0.1"/>
+  <polygon points="70,0 28,-70 -28,-70 -70,0 -28,70 28,70"
+    transform="translate(70,70)"
+    fill="none" stroke="#00e5c8" stroke-width="2"/>
+  <polygon points="54,0 22,-54 -22,-54 -54,0 -22,54 22,54"
+    transform="translate(70,70)"
+    fill="none" stroke="#00e5c8" stroke-width="0.5" opacity="0.2"/>
+  <line x1="0" y1="70" x2="14" y2="70" stroke="#00e5c8" stroke-width="0.8" opacity="0.5"/>
+  <line x1="126" y1="70" x2="140" y2="70" stroke="#00e5c8" stroke-width="0.8" opacity="0.5"/>
+  <text x="48" y="82" font-family="Syne, sans-serif" font-size="40" font-weight="800" fill="#ffffff" text-anchor="middle">A</text>
+  <text x="93" y="82" font-family="Syne, sans-serif" font-size="40" font-weight="800" fill="#00e5c8" text-anchor="middle">M</text>
+</svg>
