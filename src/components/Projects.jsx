@@ -56,44 +56,6 @@ const projects = [
     ],
     tags: ['AWS', 'Terraform', 'VPC', 'RDS', 'ALB', 'ASG', 'IaC'],
   },
-  {
-    icon: 'fab fa-aws',
-    iconColor: '#FF9900',
-    title: 'Two-Tier Architecture on AWS with Terraform',
-    github: 'https://github.com/ashrafbilalmohaidat2/Two-Tier-Architecture',
-    tutorial: 'https://code2tutorial.com/tutorial/c3c70dae-574b-404c-bfc3-c46ecd87dde0/index.md',
-    live: null,
-    bullets: [
-      'Two-tier AWS architecture (web + database) fully defined in Terraform HCL',
-      'Public/private subnet design, version-controlled, deployed with a single terraform apply',
-    ],
-    tags: ['AWS', 'Terraform', 'HCL', 'VPC', 'IaC'],
-  },
-  {
-    icon: 'fas fa-archive',
-    iconColor: '#64748b',
-    title: 'Static Website Hosting via Terraform',
-    github: 'https://github.com/ashrafbilalmohaidat2/Hosting-Static-Website-Using-Terraform',
-    tutorial: 'https://code2tutorial.com/tutorial/1897b225-3565-4ec9-9963-0d876a6e3660/index.md',
-    live: null,
-    bullets: [
-      'AWS S3 bucket for static hosting via Terraform — bucket policy, public access, and website config as code',
-      'Fully repeatable and teardown-safe via terraform destroy',
-    ],
-    tags: ['AWS', 'S3', 'Terraform', 'IaC', 'Static Hosting'],
-  },
-  {
-    icon: 'fas fa-utensils',
-    iconColor: '#22c55e',
-    title: 'Spices Food Blog',
-    github: 'https://github.com/ashrafbilalmohaidat2/spices-resturant-app',
-    tutorial: null,
-    live: 'https://spices-resturant-app-eight.vercel.app/',
-    bullets: [
-      'Food blog with React Router, Bootstrap responsive design, containerized with Docker and deployed on Vercel',
-    ],
-    tags: ['ReactJS', 'React Router', 'Bootstrap', 'Docker', 'Vercel'],
-  },
 ]
 
 export default function Projects() {
