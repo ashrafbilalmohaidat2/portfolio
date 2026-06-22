@@ -1,7 +1,7 @@
 import { SectionLabel } from './About'
 
 const platforms = [
-  { icon: 'fas fa-globe',    color: '#f97316', name: 'Website',   handle: 'devopsunfiltered.netlify.app', href: 'https://ashrafbilalmohaidat2.github.io/devopsunfiltered/'                          },
+  { icon: 'fas fa-globe',    color: '#f97316', name: 'Website',   handle: 'ashrafbilalmohaidat2.github.io/devopsunfiltered', href: 'https://ashrafbilalmohaidat2.github.io/devopsunfiltered/'                          },
   { icon: 'fab fa-instagram',color: '#e1306c', name: 'Instagram', handle: '@devopsunfiltered',            href: 'https://www.instagram.com/devopsunfiltered/?hl=en'             },
   { icon: 'fab fa-youtube',  color: '#ff0000', name: 'YouTube',   handle: 'DevOps Unfiltered',            href: 'https://www.youtube.com/@devops_unfiltered'                    },
   { icon: 'fab fa-linkedin', color: '#0a66c2', name: 'LinkedIn',  handle: 'Ashraf Mheidat',               href: 'https://www.linkedin.com/in/ashraf-mheidat-8471b9294/'        },
