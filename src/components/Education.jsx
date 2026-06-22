@@ -2,7 +2,7 @@ import { SectionLabel } from './About'
 
 export default function Education() {
   return (
-    <section id="education" className="py-28 px-6 relative z-10 bg-paper dark:bg-[#0f172a] transition-colors duration-300">
+    <section id="education" className="py-16 md:py-28 px-6 relative z-10 bg-paper dark:bg-[#0f172a] transition-colors duration-300">
       <div className="max-w-5xl mx-auto">
         <SectionLabel num="05" title="Education" />
         <div className="fade-in">
@@ -19,7 +19,7 @@ export default function Education() {
               </div>
 
               <div>
-                <div className="font-heading font-black text-[1.9rem] text-[#0f172a] dark:text-[#f1f5f9] mb-1 leading-tight">
+                <div className="font-heading font-black text-[clamp(1.4rem,4vw,1.9rem)] text-[#0f172a] dark:text-[#f1f5f9] mb-1 leading-tight">
                   B.Sc. Software Engineering
                 </div>
                 <div className="font-mono text-[0.88rem] text-[#22c55e] mb-2">

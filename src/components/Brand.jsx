@@ -9,7 +9,7 @@ const platforms = [
 
 export default function Brand() {
   return (
-    <section id="brand" className="py-28 px-6 relative z-10 bg-paper2 dark:bg-[#0a1628] transition-colors duration-300">
+    <section id="brand" className="py-16 md:py-28 px-6 relative z-10 bg-paper2 dark:bg-[#0a1628] transition-colors duration-300">
       <div className="max-w-5xl mx-auto">
         <SectionLabel num="06" title="DevOps Unfiltered" />
 
@@ -20,7 +20,7 @@ export default function Brand() {
             <div className="grid grid-cols-1 lg:grid-cols-2">
 
               {/* Left */}
-              <div className="p-8 md:p-12 lg:border-r border-slate-100 dark:border-slate-700/60 flex flex-col gap-8">
+              <div className="p-6 md:p-8 lg:p-12 border-b lg:border-b-0 lg:border-r border-slate-100 dark:border-slate-700/60 flex flex-col gap-6 md:gap-8">
                 <div>
                   <h3 className="font-heading font-black text-4xl md:text-5xl leading-tight mb-6">
                     <span className="text-[#0f172a] dark:text-[#f1f5f9]">DevOps</span>
@@ -56,7 +56,7 @@ export default function Brand() {
               </div>
 
               {/* Right — social platforms */}
-              <div className="p-6 md:p-8 flex flex-col gap-3">
+              <div className="p-5 md:p-8 flex flex-col gap-3">
                 <p className="font-mono text-[0.62rem] text-slate-400 dark:text-slate-500 tracking-[0.3em] uppercase mb-2">Find us on</p>
                 {platforms.map(({ icon, color, name, handle, href }) => (
                   <a
@@ -70,7 +70,7 @@ export default function Brand() {
                   >
                     <i className={`${icon} text-2xl flex-shrink-0`} style={{ color }} />
                     <span className="font-heading font-bold text-[1.05rem] text-[#0f172a] dark:text-[#f1f5f9]">{name}</span>
-                    <span className="font-mono text-[0.72rem] text-slate-400 dark:text-slate-500 ml-auto group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors truncate">{handle}</span>
+                    <span className="hidden sm:block font-mono text-[0.72rem] text-slate-400 dark:text-slate-500 ml-auto group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors truncate max-w-[120px] md:max-w-none">{handle}</span>
                     <span className="text-slate-300 dark:text-slate-600 group-hover:text-slate-500 dark:group-hover:text-slate-400 transition-colors">→</span>
                   </a>
                 ))}

@@ -58,10 +58,10 @@ export default function Hero() {
       ))}
 
       {/* Main content */}
-      <div className="relative z-10 w-full px-6 md:px-12 lg:px-20 pt-24 pb-20">
+      <div className="relative z-10 w-full px-6 md:px-12 lg:px-20 pt-20 md:pt-24 pb-24 md:pb-20">
 
         {/* Status badge */}
-        <div className="inline-flex items-center gap-2.5 font-mono text-[0.7rem] text-[#16a34a] dark:text-[#4ade80] tracking-[0.18em] uppercase bg-[#22c55e]/[0.09] dark:bg-[#22c55e]/[0.12] border border-[#22c55e]/25 rounded-full px-5 py-2 mb-10">
+        <div className="inline-flex items-center gap-2 sm:gap-2.5 font-mono text-[0.62rem] sm:text-[0.7rem] text-[#16a34a] dark:text-[#4ade80] tracking-[0.1em] sm:tracking-[0.18em] uppercase bg-[#22c55e]/[0.09] dark:bg-[#22c55e]/[0.12] border border-[#22c55e]/25 rounded-full px-4 sm:px-5 py-2 mb-8 md:mb-10">
           <span className="w-2 h-2 rounded-full bg-[#22c55e] animate-pulse-dot" />
           Available for opportunities worldwide
         </div>

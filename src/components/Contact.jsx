@@ -32,7 +32,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-28 px-6 relative z-10 bg-paper dark:bg-[#0f172a] transition-colors duration-300">
+    <section id="contact" className="py-16 md:py-28 px-6 relative z-10 bg-paper dark:bg-[#0f172a] transition-colors duration-300">
       <div className="max-w-5xl mx-auto">
         <SectionLabel num="09" title="Contact" />
 
@@ -40,7 +40,7 @@ export default function Contact() {
 
           {/* Left — info */}
           <div>
-            <h3 className="font-heading font-black text-[2.4rem] text-[#0f172a] dark:text-[#f1f5f9] leading-tight mb-4">
+            <h3 className="font-heading font-black text-[clamp(1.8rem,4vw,2.4rem)] text-[#0f172a] dark:text-[#f1f5f9] leading-tight mb-4">
               Let's build<br />
               <span className="text-[#22c55e]">something great.</span>
             </h3>

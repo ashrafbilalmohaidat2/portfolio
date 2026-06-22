@@ -81,7 +81,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/[0.05]">
-        <div className="max-w-5xl mx-auto px-6 py-5 flex justify-center">
+        <div className="max-w-5xl mx-auto px-6 py-5 pb-20 md:pb-5 flex justify-center">
           <p className="font-mono text-[0.62rem] text-slate-600 tracking-wide">
             © {new Date().getFullYear()} Ashraf Mheidat · All rights reserved.
           </p>

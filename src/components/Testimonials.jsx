@@ -11,7 +11,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-28 px-6 relative z-10 bg-paper2 dark:bg-[#0a1628] transition-colors duration-300">
+    <section id="testimonials" className="py-16 md:py-28 px-6 relative z-10 bg-paper2 dark:bg-[#0a1628] transition-colors duration-300">
       <div className="max-w-5xl mx-auto">
         <SectionLabel num="08" title="Recommendations" />
 
@@ -21,7 +21,7 @@ export default function Testimonials() {
 
         <div className="fade-in grid grid-cols-1 md:grid-cols-2 gap-4">
           {testimonials.map(({ quote, name, relation, initials }) => (
-            <div key={name} className="card relative p-8 overflow-hidden">
+            <div key={name} className="card relative p-6 md:p-8 overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-[#22c55e]" />
 
               <span className="absolute top-4 left-6 font-heading font-black text-[6rem] leading-none select-none pointer-events-none text-[#22c55e]/[0.06]">

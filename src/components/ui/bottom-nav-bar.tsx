@@ -46,8 +46,8 @@ export function BottomNavBar({
       role="navigation"
       aria-label="Bottom Navigation"
       className={cn(
-        "bg-card border border-border rounded-full flex items-center p-2 shadow-xl space-x-1 min-w-[320px] max-w-[95vw] h-[52px]",
-        stickyBottom && "fixed inset-x-0 bottom-4 mx-auto z-20 w-fit",
+        "bg-card border border-border rounded-full flex items-center p-2 shadow-xl space-x-1 w-[min(360px,90vw)] h-[52px]",
+        stickyBottom && "fixed inset-x-0 bottom-4 mx-auto z-20",
         className,
       )}
     >

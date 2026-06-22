@@ -9,11 +9,11 @@ const stats = [
 export default function About() {
 
   return (
-    <section id="about" className="py-28 px-6 relative z-10 overflow-hidden bg-paper dark:bg-[#0f172a] transition-colors duration-300">
+    <section id="about" className="py-16 md:py-28 px-6 relative z-10 overflow-hidden bg-paper dark:bg-[#0f172a] transition-colors duration-300">
       <div className="max-w-5xl mx-auto">
         <SectionLabel num="01" title="About Me" />
 
-        <div className="fade-in grid grid-cols-1 md:grid-cols-[1fr_360px] gap-14 items-start">
+        <div className="fade-in grid grid-cols-1 md:grid-cols-[1fr_300px] lg:grid-cols-[1fr_360px] gap-10 md:gap-14 items-start">
 
           {/* Bio */}
           <div className="space-y-5">
@@ -108,7 +108,7 @@ function StatCard({ val, sub, accent }) {
 
 export function SectionLabel({ num, title }) {
   return (
-    <div className="mb-16 relative">
+    <div className="mb-10 md:mb-16 relative">
       {/* Giant watermark number */}
       <span
         className="absolute -top-6 -left-2 font-heading font-black leading-none select-none pointer-events-none text-[#0f172a]/[0.04] dark:text-white/[0.04]"

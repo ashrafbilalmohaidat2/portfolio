@@ -49,7 +49,7 @@ const learning = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-28 px-6 relative z-10 bg-paper2 dark:bg-[#0a1628] transition-colors duration-300">
+    <section id="skills" className="py-16 md:py-28 px-6 relative z-10 bg-paper2 dark:bg-[#0a1628] transition-colors duration-300">
       <div className="max-w-5xl mx-auto">
         <SectionLabel num="02" title="Tech Stack" />
         <div className="fade-in space-y-8">

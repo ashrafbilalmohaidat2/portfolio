@@ -99,7 +99,7 @@ const projects = [
 export default function Projects() {
   const [featured, ...rest] = projects
   return (
-    <section id="projects" className="py-28 px-6 relative z-10 bg-paper dark:bg-[#0f172a] transition-colors duration-300">
+    <section id="projects" className="py-16 md:py-28 px-6 relative z-10 bg-paper dark:bg-[#0f172a] transition-colors duration-300">
       <div className="max-w-5xl mx-auto">
         <SectionLabel num="03" title="Projects" />
         <div className="fade-in flex flex-col gap-4">
@@ -130,8 +130,8 @@ function FeaturedCard({ icon, iconColor, title, github, tutorial, live, bullets,
   return (
     <div className="card overflow-hidden">
       <div className="h-[3px] bg-[#22c55e] w-full" />
-      <div className="p-7 md:p-8 border-b border-slate-100 dark:border-slate-700/60">
-        <div className="flex items-start justify-between gap-4 flex-wrap mb-4">
+      <div className="p-5 sm:p-7 md:p-8 border-b border-slate-100 dark:border-slate-700/60">
+        <div className="flex items-start justify-between gap-3 flex-wrap mb-4">
           <span className="inline-flex items-center gap-2 font-mono text-[0.62rem] tracking-[0.2em] uppercase text-[#16a34a] dark:text-[#4ade80] bg-[#22c55e]/[0.08] border border-[#22c55e]/20 rounded-full px-4 py-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-[#22c55e] animate-pulse-dot" />
             Featured Project
@@ -149,7 +149,7 @@ function FeaturedCard({ icon, iconColor, title, github, tutorial, live, bullets,
           <h3 className="font-heading font-black text-xl md:text-2xl text-[#0f172a] dark:text-[#f1f5f9] leading-tight">{title}</h3>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 p-7 md:p-8 gap-x-8 gap-y-3.5 border-b border-slate-100 dark:border-slate-700/60">
+      <div className="grid grid-cols-1 lg:grid-cols-2 p-5 sm:p-7 md:p-8 gap-x-8 gap-y-3.5 border-b border-slate-100 dark:border-slate-700/60">
         {bullets.map((b, i) => (
           <div key={i} className="flex gap-3 items-start text-[0.9rem] text-slate-600 dark:text-slate-300 leading-relaxed font-sans">
             <span className="mt-[7px] flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#22c55e]" />
@@ -157,7 +157,7 @@ function FeaturedCard({ icon, iconColor, title, github, tutorial, live, bullets,
           </div>
         ))}
       </div>
-      <div className="flex flex-wrap gap-2 p-7 md:p-8">
+      <div className="flex flex-wrap gap-2 p-5 sm:p-7 md:p-8">
         {tags.map(t => (
           <span key={t} className="font-mono text-[0.65rem] text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 rounded-lg px-2.5 py-1 hover:border-[#22c55e]/30 hover:text-[#0f172a] dark:hover:text-white transition-colors cursor-default">
             {t}

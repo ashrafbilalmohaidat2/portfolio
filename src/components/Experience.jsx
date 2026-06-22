@@ -50,7 +50,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-28 px-6 relative z-10 bg-paper2 dark:bg-[#0a1628] transition-colors duration-300">
+    <section id="experience" className="py-16 md:py-28 px-6 relative z-10 bg-paper2 dark:bg-[#0a1628] transition-colors duration-300">
       <div className="max-w-5xl mx-auto">
         <SectionLabel num="04" title="Experience" />
         <div className="fade-in relative">
