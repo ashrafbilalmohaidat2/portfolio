@@ -99,8 +99,8 @@ const projects = [
 export default function Projects() {
   const [featured, ...rest] = projects
   return (
-    <section id="projects" className="py-16 md:py-28 px-6 relative z-10 bg-paper dark:bg-[#0f172a] transition-colors duration-300">
-      <div className="max-w-5xl mx-auto">
+    <section id="projects" className="section-light">
+      <div className="container">
         <SectionLabel num="03" title="Projects" />
         <div className="fade-in flex flex-col gap-4">
           <FeaturedCard {...featured} />
@@ -117,8 +117,10 @@ function LinkBtn({ href, icon, label }) {
   if (!href) return null
   return (
     <a
-      href={href} target="_blank" rel="noreferrer"
-      className="inline-flex items-center gap-1.5 font-mono text-[0.68rem] text-slate-500 dark:text-slate-400 hover:text-[#0f172a] dark:hover:text-white bg-slate-100 dark:bg-slate-700/60 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-600 hover:border-slate-300 px-3 py-1.5 rounded-lg transition-all duration-200 no-underline"
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-1.5 font-mono text-[0.68rem] text-slate-500 dark:text-slate-400 hover:text-ink dark:hover:text-white bg-slate-100 dark:bg-slate-700/60 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-600 hover:border-slate-300 px-3 py-1.5 rounded-lg transition-all duration-200 no-underline"
     >
       <i className={`${icon} text-[0.72rem]`} />
       {label}
@@ -129,37 +131,43 @@ function LinkBtn({ href, icon, label }) {
 function FeaturedCard({ icon, iconColor, title, github, tutorial, live, bullets, tags }) {
   return (
     <div className="card overflow-hidden">
-      <div className="h-[3px] bg-[#22c55e] w-full" />
+      <div className="h-[3px] bg-green w-full" />
+
       <div className="p-5 sm:p-7 md:p-8 border-b border-slate-100 dark:border-slate-700/60">
-        <div className="flex items-start justify-between gap-3 flex-wrap mb-4">
-          <span className="inline-flex items-center gap-2 font-mono text-[0.62rem] tracking-[0.2em] uppercase text-[#16a34a] dark:text-[#4ade80] bg-[#22c55e]/[0.08] border border-[#22c55e]/20 rounded-full px-4 py-1.5">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#22c55e] animate-pulse-dot" />
+        <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
+          <span className="inline-flex items-center gap-2 font-mono text-[0.62rem] tracking-[0.2em] uppercase text-green-700 dark:text-green-400 bg-green/[0.08] border border-green/20 rounded-full px-4 py-1.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-green animate-pulse-dot" />
             Featured Project
           </span>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             <LinkBtn href={github}   icon="fab fa-github"            label="GitHub"   />
             <LinkBtn href={tutorial} icon="fas fa-book"              label="Tutorial" />
             <LinkBtn href={live}     icon="fas fa-external-link-alt" label="Live"     />
           </div>
         </div>
-        <div className="flex items-center gap-4">
-          <div className="w-12 h-12 rounded-xl bg-[#22c55e]/[0.08] border border-[#22c55e]/15 flex items-center justify-center flex-shrink-0">
-            <i className={`${icon} text-xl`} style={{ color: iconColor }} />
+        <div className="flex items-center gap-3 md:gap-4">
+          <div className="w-11 h-11 md:w-12 md:h-12 rounded-xl bg-green/[0.08] border border-green/15 flex items-center justify-center shrink-0">
+            <i className={`${icon} text-lg md:text-xl`} style={{ color: iconColor }} />
           </div>
-          <h3 className="font-heading font-black text-xl md:text-2xl text-[#0f172a] dark:text-[#f1f5f9] leading-tight">{title}</h3>
+          <h3 className="font-heading font-black text-lg md:text-2xl text-ink dark:text-[#f1f5f9] leading-tight">{title}</h3>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 p-5 sm:p-7 md:p-8 gap-x-8 gap-y-3.5 border-b border-slate-100 dark:border-slate-700/60">
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 p-5 sm:p-7 md:p-8 gap-x-8 gap-y-3 border-b border-slate-100 dark:border-slate-700/60">
         {bullets.map((b, i) => (
-          <div key={i} className="flex gap-3 items-start text-[0.9rem] text-slate-600 dark:text-slate-300 leading-relaxed font-sans">
-            <span className="mt-[7px] flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#22c55e]" />
+          <div key={i} className="flex gap-3 items-start text-[0.88rem] md:text-[0.9rem] text-slate-600 dark:text-slate-300 leading-relaxed font-sans">
+            <span className="mt-[7px] shrink-0 w-1.5 h-1.5 rounded-full bg-green" />
             {b}
           </div>
         ))}
       </div>
+
       <div className="flex flex-wrap gap-2 p-5 sm:p-7 md:p-8">
         {tags.map(t => (
-          <span key={t} className="font-mono text-[0.65rem] text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 rounded-lg px-2.5 py-1 hover:border-[#22c55e]/30 hover:text-[#0f172a] dark:hover:text-white transition-colors cursor-default">
+          <span
+            key={t}
+            className="font-mono text-[0.64rem] text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 rounded-lg px-2.5 py-1 hover:border-green/30 hover:text-ink dark:hover:text-white transition-colors cursor-default"
+          >
             {t}
           </span>
         ))}
@@ -171,34 +179,52 @@ function FeaturedCard({ icon, iconColor, title, github, tutorial, live, bullets,
 function ProjectCard({ icon, iconColor, title, github, tutorial, live, bullets, tags }) {
   return (
     <div className="card flex flex-col overflow-hidden">
-      <div className="p-6 border-b border-slate-100 dark:border-slate-700/60">
+      <div className="p-5 md:p-6 border-b border-slate-100 dark:border-slate-700/60">
         <div className="flex items-start justify-between gap-3 mb-4">
-          <div className="w-10 h-10 rounded-xl bg-[#22c55e]/[0.08] border border-[#22c55e]/15 flex items-center justify-center flex-shrink-0">
+          <div className="w-10 h-10 rounded-xl bg-green/[0.08] border border-green/15 flex items-center justify-center shrink-0">
             <i className={`${icon} text-base`} style={{ color: iconColor }} />
           </div>
           <div className="flex gap-3">
-            {github   && <a href={github}   target="_blank" rel="noreferrer" className="text-slate-400 dark:text-slate-500 hover:text-[#0f172a] dark:hover:text-white transition-colors no-underline text-sm cursor-pointer"><i className="fab fa-github" /></a>}
-            {tutorial && <a href={tutorial} target="_blank" rel="noreferrer" className="text-slate-400 dark:text-slate-500 hover:text-[#0f172a] dark:hover:text-white transition-colors no-underline text-sm cursor-pointer"><i className="fas fa-book" /></a>}
-            {live     && <a href={live}     target="_blank" rel="noreferrer" className="text-slate-400 dark:text-slate-500 hover:text-[#0f172a] dark:hover:text-white transition-colors no-underline text-sm cursor-pointer"><i className="fas fa-external-link-alt" /></a>}
+            {github   && <IconLink href={github}   icon="fab fa-github"            />}
+            {tutorial && <IconLink href={tutorial} icon="fas fa-book"              />}
+            {live     && <IconLink href={live}     icon="fas fa-external-link-alt" />}
           </div>
         </div>
-        <h3 className="font-heading font-bold text-[1.02rem] text-[#0f172a] dark:text-[#f1f5f9] leading-snug">{title}</h3>
+        <h3 className="font-heading font-bold text-[0.98rem] md:text-[1.02rem] text-ink dark:text-[#f1f5f9] leading-snug">{title}</h3>
       </div>
-      <div className="px-6 py-5 flex-1 space-y-2.5">
+
+      <div className="px-5 md:px-6 py-5 flex-1 space-y-2.5">
         {bullets.map((b, i) => (
-          <div key={i} className="flex gap-2.5 items-start text-[0.88rem] text-slate-500 dark:text-slate-400 leading-relaxed font-sans">
-            <span className="mt-[7px] flex-shrink-0 w-1 h-1 rounded-full bg-[#22c55e]" />
+          <div key={i} className="flex gap-2.5 items-start text-[0.86rem] md:text-[0.88rem] text-slate-500 dark:text-slate-400 leading-relaxed font-sans">
+            <span className="mt-[7px] shrink-0 w-1 h-1 rounded-full bg-green" />
             {b}
           </div>
         ))}
       </div>
-      <div className="px-6 pb-6 pt-3 flex flex-wrap gap-1.5 border-t border-slate-100 dark:border-slate-700/60">
+
+      <div className="px-5 md:px-6 pb-5 md:pb-6 pt-3 flex flex-wrap gap-1.5 border-t border-slate-100 dark:border-slate-700/60">
         {tags.map(t => (
-          <span key={t} className="font-mono text-[0.62rem] text-slate-500 dark:text-slate-400 bg-slate-50 dark:bg-slate-700/40 border border-slate-200 dark:border-slate-600 rounded-md px-2 py-0.5 hover:text-[#0f172a] dark:hover:text-white transition-colors cursor-default">
+          <span
+            key={t}
+            className="font-mono text-[0.62rem] text-slate-500 dark:text-slate-400 bg-slate-50 dark:bg-slate-700/40 border border-slate-200 dark:border-slate-600 rounded-md px-2 py-0.5 hover:text-ink dark:hover:text-white transition-colors cursor-default"
+          >
             {t}
           </span>
         ))}
       </div>
     </div>
+  )
+}
+
+function IconLink({ href, icon }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className="text-slate-400 dark:text-slate-500 hover:text-ink dark:hover:text-white transition-colors no-underline text-sm"
+    >
+      <i className={icon} />
+    </a>
   )
 }
