@@ -27,10 +27,12 @@ export default function About() {
             <div className="space-y-5 text-[0.97rem] text-slate-600 dark:text-slate-300 leading-[1.85] font-sans">
               <p>
                 I'm <span className="text-ink dark:text-white font-semibold">Ashraf Mheidat</span> — a{' '}
-                <span className="text-green font-semibold">Cloud & DevOps Engineer</span> with hands-on
-                experience designing secure, scalable cloud infrastructure on AWS and Alibaba Cloud. I
-                specialize in turning complex infrastructure problems into clean, automated, reproducible
-                solutions.
+                <span className="text-green font-semibold">Cloud & DevOps Engineer</span> with hands-on experience designing, automating,
+                 and managing cloud infrastructure on AWS. Experienced in Infrastructure as Code (Terraform & Ansible), 
+                 containerization with Docker, Kubernetes orchestration, CI/CD pipeline automation using GitHub Actions, and Linux administration. 
+                 Passionate about building scalable, secure, and highly available cloud environments while improving deployment efficiency through automation. 
+                 Strong problem-solving mindset with experience delivering production-ready infrastructure, streamlining operations, and supporting modern software delivery practices. 
+                 Continuously learning and expanding expertise in cloud-native technologies to build reliable, maintainable, and scalable platforms.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">

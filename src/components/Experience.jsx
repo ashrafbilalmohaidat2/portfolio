@@ -3,13 +3,16 @@ import { SectionLabel } from './About'
 const experiences = [
   {
     date: 'May 2026 – Present',
-    role: 'DevOps Engineer Intern',
-    company: 'Obsidian Labs',
+    role: 'DevOps Engineer',
+    company: 'Obsidian Labs - Internship',
     type: 'Internship',
     bullets: [
-      'Engineering a provider-agnostic IaC platform to automate provisioning and lifecycle management across cloud and on-premises environments using Ansible.',
-      'Building a self-hosted platform integrating multiple services under centralized IAM with SSO (OAuth2/OIDC), DNS management, reverse proxy, and TLS/SSL-secured domain routing.',
-      'Developing Python-based CLI automation tools and infrastructure workflows to streamline provisioning, deployment, and operational tasks across distributed systems.',
+      'Designed and maintained a provider-agnostic Infrastructure as Code (IaC) platform using Ansible to automate infrastructure provisioning and lifecycle management across cloud and on-premises environments.',
+      'Built and managed a self-hosted platform integrating Single Sign-On (SSO), OAuth2/OIDC, DNS management, reverse proxy, and TLS/SSL-secured domain routing.',
+      'Developed Python-based CLI automation tools to simplify infrastructure provisioning, deployment, and operational workflows.',
+      'Automated deployment processes and infrastructure configuration to improve consistency, reduce manual effort, and increase operational efficiency.',
+      'Troubleshot infrastructure and platform issues, ensuring high availability, reliability, and maintainability of production environments.',
+      'Collaborated with development teams to support scalable, secure, and automated software delivery workflows.',
     ],
   },
   {
@@ -25,14 +28,14 @@ const experiences = [
   },
   {
     date: 'Oct 2024 – Jul 2025',
-    role: 'Cloud Computing & AI Intern',
-    company: 'Galaxy Organization · via Digiskills',
+    role: 'Cloud Computing & AI',
+    company: 'Galaxy Organization - Internship · via Digiskills',
     type: 'Internship',
     bullets: [
-      'Completed industry-aligned training in cloud computing with practical exposure to Alibaba Cloud services',
-      'Designed and deployed cloud-based solutions covering compute, networking, and storage components',
-      'Implemented secure cloud configurations using VPC, IAM roles, and security groups',
-      'Earned ACA – Cloud Engineer and ACA – Business User certifications from Alibaba Cloud',
+      'Completed hands-on training in cloud computing with a focus on Alibaba Cloud services and cloud architecture fundamentals.',
+      'Designed and deployed cloud-based solutions using Alibaba Cloud services following industry best practices.',
+      'Worked on cloud infrastructure, networking, storage, and security concepts through practical projects and labs.',
+      'Collaborated with team members to deliver cloud-based solutions and improve deployment workflows.',
     ],
   },
   {
